@@ -1,6 +1,6 @@
 <template>
   <div class="sticky-top">
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar toggleable="lg" type="dark" variant="dark">
       <!-- <b-navbar-brand to="/">NavBar</b-navbar-brand> -->
 
       <div class="container ">

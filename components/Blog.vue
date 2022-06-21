@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h3 class="">Latest Script and Code</h3>
+                    <h3 class="">Featured Post</h3>
                     <div class="underline"></div>
 
                     <!-- Feature Posts -->
