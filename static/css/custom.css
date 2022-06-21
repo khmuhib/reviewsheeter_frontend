@@ -7,3 +7,29 @@
   width: 4rem;
   background-color: red;
 }
+
+.header-top-ads-img,
+.header-top-logo-img {
+  width: 100%;
+}
+
+.feature-post-card-main {
+  padding: 5px;
+}
+
+.feature-post-card-main img {
+  width: 100%;
+}
+
+.feature-post-card-main:hover {
+  box-shadow: 0px 0px 5px 0px #ccc;
+  background-color: white;
+}
+
+.latest-post-card-main img {
+  width: 100%;
+}
+
+.latest-post-card-main:hover h6 {
+  color: red !important;
+}
