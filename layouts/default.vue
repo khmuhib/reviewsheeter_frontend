@@ -1,6 +1,5 @@
 <template>
   <div>
-    <AppheaderTop />
     <AppHeader />
     <Nuxt />
     <AppFooter />
@@ -10,7 +9,6 @@
 <script>
 import AppHeader from '~/components/inc/AppHeader.vue'
 import AppFooter from '~/components/inc/AppFooter.vue'
-import AppheaderTop from '../components/inc/AppheaderTop.vue'
 
 
 export default {
@@ -18,7 +16,6 @@ export default {
   components: {
     AppHeader,
     AppFooter,
-    AppheaderTop
   }
 
 }

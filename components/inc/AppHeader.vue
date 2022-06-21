@@ -1,5 +1,6 @@
 <template>
-  <div class="sticky-top">
+  <div class="sticky-top shadow">
+    <AppheaderTop></AppheaderTop>
     <b-navbar toggleable="lg" type="dark" variant="dark">
       <!-- <b-navbar-brand to="/">NavBar</b-navbar-brand> -->
 
@@ -51,8 +52,10 @@
 </template>
 
 <script>
+import AppheaderTop from './AppheaderTop.vue';
 export default {
   name: "AppHeader",
+  components: { AppheaderTop }
 };
 </script>
 
