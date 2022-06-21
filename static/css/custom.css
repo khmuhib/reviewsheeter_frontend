@@ -1,0 +1,9 @@
+.my-carousle img {
+  height: 350px;
+}
+
+.underline {
+  height: 4px;
+  width: 4rem;
+  background-color: red;
+}
