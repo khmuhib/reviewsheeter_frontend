@@ -18,6 +18,7 @@
             </b-nav-item-dropdown>
             <b-nav-item to="/contact">Contact</b-nav-item>
             <b-nav-item to="/blog">Blog</b-nav-item>
+            <b-nav-item to="/dashboard" v-if="!loggedIn">Deshboard</b-nav-item>
             <b-nav-item href="#" disabled>Start Selling</b-nav-item>
             <b-nav-item href="#" disabled>Hire Us</b-nav-item>
           </b-navbar-nav>
@@ -55,7 +56,13 @@
 import AppheaderTop from './AppheaderTop.vue';
 export default {
   name: "AppHeader",
-  components: { AppheaderTop }
+  components: { AppheaderTop },
+  computed: {
+    loggedIn() {
+      return this.$store.state.auth.loggedIn;
+    },
+
+  }
 };
 </script>
 

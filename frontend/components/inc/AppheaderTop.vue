@@ -17,8 +17,9 @@
           </a>
         </div>
         <div class="col-md-3 text-right d-flex align-items-center">
-          <nuxt-link :to="{ name: 'login' }" class="btn btn-success m-2">Login</nuxt-link>
-          <nuxt-link :to="{ name: 'register' }" class="btn btn-primary m-2">Sign up</nuxt-link>
+          <nuxt-link :to="{ name: 'login' }" class="btn btn-success m-2" v-if="!loggedIn">Login</nuxt-link>
+          <nuxt-link :to="{ name: 'register' }" class="btn btn-primary m-2" v-if="!loggedIn">Sign up</nuxt-link>
+          <nuxt-link :to="{ name: 'dashboard' }" class="btn btn-primary m-2" v-if="loggedIn">Dashboard</nuxt-link>
         </div>
       </div>
     </div>
@@ -26,7 +27,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+  computed: {
+    loggedIn() {
+      return this.$store.state.auth.loggedIn;
+    },
+
+  }
+};
 </script>
 
 <style scoped>
