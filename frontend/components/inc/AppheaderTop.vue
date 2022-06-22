@@ -16,9 +16,9 @@
             />
           </a>
         </div>
-        <div class="col-md-3 text-right">
-          <a href="" class="btn btn-success">Login</a>
-          <a href="" class="btn btn-primary">Sign up</a>
+        <div class="col-md-3 text-right d-flex align-items-center">
+          <nuxt-link :to="{ name: 'login' }" class="btn btn-success m-2">Login</nuxt-link>
+          <nuxt-link :to="{ name: 'register' }" class="btn btn-primary m-2">Sign up</nuxt-link>
         </div>
       </div>
     </div>
